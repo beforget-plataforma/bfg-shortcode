@@ -12,9 +12,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   // SLIDE POST
   $slidePost.on('init', function(event){
-    // document.querySelector('.bfg-shortcode-lading-slider-post').classList.remove('active');
     $(this).siblings().removeClass('active');
-    // left
   });
   $slidePost.on('afterChange', function(event, slick, currentSlide){
       if(!setInitSlide.post) {
@@ -75,9 +73,7 @@ document.addEventListener('DOMContentLoaded', function () {
       setInitSlide.events = true;
   });
   $slideEvent.on('init', function(event){
-    // document.querySelector('.bfg-shortcode-lading-slider-post').classList.remove('active');
     $(this).siblings().removeClass('active');
-    // left
   });
   
   function loadSlideEvent() {
@@ -128,9 +124,7 @@ document.addEventListener('DOMContentLoaded', function () {
       setInitSlide.member = true;
   });
   $slideMember.on('init', function(event){
-    // document.querySelector('.bfg-shortcode-lading-slider-post').classList.remove('active');
     $(this).siblings().removeClass('active');
-    // left
   });
   
   function loadSlideMember() {
@@ -181,7 +175,6 @@ document.addEventListener('DOMContentLoaded', function () {
     setInitSlide.sesiones = true;
   });
   $('.bfg-slide-sesiones').on('init', function(event){
-    // document.querySelector('.bfg-shortcode-lading-slider-post').classList.remove('active');
     $(this).siblings().removeClass('active');
     // left
   });
@@ -237,9 +230,7 @@ document.addEventListener('DOMContentLoaded', function () {
     setInitSlide.project = true;
   });
   $('.bfg-slide-proyectos').on('init', function(event){
-    // document.querySelector('.bfg-shortcode-lading-slider-post').classList.remove('active');
     $(this).siblings().removeClass('active');
-    // left
   });
   function loadSlideProject() {
     $('.bfg-slide-proyectos').slick({
