@@ -1,0 +1,421 @@
+/* SLICk*/
+/* Slider */
+.slick-slider
+{
+    position: relative;
+
+    display: block;
+    box-sizing: border-box;
+
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+    -ms-touch-action: pan-y;
+        touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.slick-list
+{
+    position: relative;
+
+    display: block;
+    overflow: hidden;
+
+    margin: 0;
+    padding: 0;
+}
+.slick-list:focus
+{
+    outline: none;
+}
+.slick-list.dragging
+{
+    cursor: pointer;
+    cursor: hand;
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list
+{
+    -webkit-transform: translate3d(0, 0, 0);
+       -moz-transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
+         -o-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+}
+
+.slick-track
+{
+    position: relative;
+    top: 0;
+    left: 0;
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.slick-track:before,
+.slick-track:after
+{
+    display: table;
+
+    content: '';
+}
+.slick-track:after
+{
+    clear: both;
+}
+.slick-loading .slick-track
+{
+    visibility: hidden;
+}
+
+.slick-slide
+{
+    display: none;
+    float: left;
+
+    height: 100%;
+    min-height: 1px;
+}
+[dir='rtl'] .slick-slide
+{
+    float: right;
+}
+.slick-slide img
+{
+    display: inline-block !important;
+}
+.slick-slide.slick-loading img
+{
+    display: none;
+}
+.slick-slide.dragging img
+{
+    pointer-events: none;
+}
+.slick-initialized .slick-slide
+{
+    display: block;
+    /* padding: 4px !important; */
+}
+.slick-loading .slick-slide
+{
+    visibility: hidden;
+}
+.slick-vertical .slick-slide
+{
+    display: block;
+
+    height: auto;
+
+    border: 1px solid transparent;
+}
+.slick-arrow{
+  height: 42px !important;
+}
+.slick-arrow.slick-hidden {
+    display: none;
+}
+.slick-next.slick-arrow{
+  right: 0;
+  left: inherit !important;
+}
+.slick-arrow span{
+  position: relative;
+  top: -4px;
+  left: -4px;
+  font-size: 23px;
+  font-family: 'Roboto';
+  font-weight: normal;
+}
+
+
+/* DASHBOARD STYLES */
+.bfg-shortcode-container {
+    position: relative;
+    overflow: hidden;
+    height: 241px;
+}
+.bfg-shortcode-container.container-dash-member {
+    height: 116px;
+}
+.dash-bfg-slide .slick-arrow i{
+    color: #6771dd !important;
+}
+.dash-bfg-slide .slick-arrow{
+    border-top-left-radius: 8px !important;
+    border-bottom-left-radius: 8px !important;
+    border-top-right-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+    height: 100% !important;
+    top: 0;
+    left: 0;
+    margin-top: 0px;
+    background-color: #fafbfd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.dash-bfg-slide .slick-arrow.button-arrow-short{
+    height: 97% !important;
+}
+
+.dash-bfg-slide .slick-next-bfg.slick-arrow {
+    left: calc(100% - 42px);
+    border-top-left-radius: 0 !important;
+    border-bottom-left-radius: 0 !important;
+    border-top-right-radius: 8px !important;
+    border-bottom-right-radius: 8px !important;
+}
+
+
+.bfg-item-dash{
+    position: relative;
+    padding: 0 8px;
+    transition: all 500ms ease;
+    -webkit-transition: all 500ms ease;
+}
+.bfg-item-dash .bfg-header-cover{
+    position: relative;
+    width: 229px;
+    height: 239px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px 0 rgba(224, 224, 224, 0.5);
+    background-color: white;
+    margin-bottom: 2px;
+    
+}
+.bfg-item-dash:hover{
+    opacity: .8;
+}
+.bfg-item-dash .bfg-header-cover.overlay:after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: #6771dd99;
+    border-radius: 15px;
+}
+.slick-slide.slick-current.slick-active .bfg-item-dash {
+    padding-left: 0;
+    transition: all 500ms ease;
+    -webkit-transition: all 500ms ease;
+}
+.bfg-cover-overlay{
+    position: absolute;
+    top:0;
+    left: 0;
+    right: 0;
+    bottom:0;
+}
+.bfg-cover-overlay:after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+}
+
+.bfg-item-dash .bfg-profile-author{
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+}
+.bfg-item-dash h2{
+    font-size: 16px;
+    font-weight: 500;
+    color: black;
+    margin-top:0;
+    line-height: 20px;
+    letter-spacing: 0.35px;
+}
+.bfg-item-dash h2.title-big{
+    font-size: 20px;
+    color: white;
+    width: 90%;
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+}
+.bfg-item-dash h2.title-post{
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 18px;
+    letter-spacing: 0.31px;
+}
+.bfg-item-dash .beforget-proximamente h2,
+.bfg-item-dash .beforget-plus h2{
+    color: white;
+}
+
+.bfg-item-dash span{
+    color: black;
+}
+.bfg-item-dash .bfg-footer-cover{
+    display: flex;
+    align-items: center;
+    justify-content: unset;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: white;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    padding: 5px 6px;
+}
+.bfg-item-dash .bfg-footer-cover .bfg-icon{
+    width: 46px;
+    padding: 3px;
+}
+.bfg-item-dash .bfg-footer-cover .bfg-icon.bfg-member-avatar{
+    width: 30px;
+}
+.bfg-item-dash .bfg-footer-cover .bfg-content{
+    font-size: 0.8em;
+    line-height: 20px;
+    letter-spacing: 0.28px;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+.bfg-item-dash .bfg-footer-cover .bfg-content.avatarName span{
+    color: #616161;
+}
+.bfg-item-dash .beforget-proximamente span{
+    color: white;
+}
+.bfg-item-dash .bfg-header-cover .container-center{
+    position: relative;
+    width: 90%;
+    margin: 0 auto;
+    min-height: inherit;
+    text-align: left;
+    z-index: 333;
+}
+.top-item-slide{
+    width: 46px;
+    height: 46px;
+    margin: 0 0 50px 11px;
+    padding-top: 13px;
+    
+}
+.top-item-slide.icon-cat-sesion.bfg-talks {
+    width: 29px;
+}
+.top-item-slide.sesiones{
+    margin: 0 0 40px 5px;
+    width: 50px;
+    padding-top: 12px;
+}
+
+.bfg-item-dash .bfg-cover-image{
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+    height: 115px;
+    margin-bottom: 16px;
+}
+.top-item-slide img{
+    width: 100%;;
+}
+
+.title-item-dash{
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 3333;
+}
+.bfg-image-bg{
+    background-size: cover;
+    background-position: center center;
+}
+.bfg-item-overlay{
+    position: absolute;
+    top:0;
+    left: 5px;
+    height: 226px;
+    width: 226px;
+    border-radius: 15px;
+    padding: 16px 15px;
+    background-color: rgba(0, 0, 0, 0.075);
+    z-index: 22;
+}
+
+.bfg-member-avatar{
+    display: flex;
+}
+.bfg-member-avatar img{
+  border-radius: 50% !important;
+  margin-right: 10px !important;
+}
+
+.bfg-shortcode-lading-slider {
+    position: absolute;
+    top: 0px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: white;
+    z-index: 444;
+    display: none;
+}
+.bfg-shortcode-lading-slider.active {
+    display: block;
+}
+.bfg-shortcode-lading-slider:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    top: 9vh;
+    left: 50%;
+    width: 50px;
+    height: 50px;
+    background-image: url('https://beforget.community/wp-content/uploads/2020/12/spinner25.gif');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.bfg-slide-member + .bfg-shortcode-lading-slider:after{
+    top: 2vh;
+}
+
+.dash-bfg-slide .tribe-events-category-bfg-talks {
+    background-color: #fb856f !important;
+}
+
+.dash-bfg-slide .tribe-events-category-bfg-talent {
+    background-color: #97ddda !important;
+}
+
+.dash-bfg-slide .tribe-events-category-bfg-basic {
+    background-color: #fa7121 !important;
+}
+
+.dash-bfg-slide .tribe-events-category-bfg-mentoring {
+    background-color: #AFEB87 !important;
+}
+.dash-bfg-slide .tribe-events-category-bfg-plus {
+    background-color: rgba(127,134,143,.75) !important;
+}
+.wrapper-post-profile{
+    border-radius: 8px;
+    overflow: hidden;
+}
+.wrapper-post-profile.bfg-slide-event,
+.wrapper-post-profile.bfg-slide-member{
+    display: flex;
+}
