@@ -1,6 +1,6 @@
 # BFG funciones Shortcode
 
-Plugin para Wordpress con un listado de funciones que obtienen distinto contenido de la platadorma.
+Plugin para Wordpress con un listado de funciones que obtienen distinto contenido de la plataforma.
 
 - Shortcode de eventos
 - Shortcode de miembros
