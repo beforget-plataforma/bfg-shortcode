@@ -2,7 +2,7 @@
 
 Plugin para Wordpress con un listado de funciones que obtienen distinto contenido de la plataforma.
 
-- Shortcode de eventos
+- Shortcode de eventos de calendario
 - Shortcode de miembros
 - Shortcode de entradas
 - Shortcode de sesiones
