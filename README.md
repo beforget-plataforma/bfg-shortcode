@@ -5,7 +5,7 @@ Plugin para Wordpress con un listado de funciones que obtienen distinto contenid
 - Shortcode de eventos de calendario
 - Shortcode de miembros
 - Shortcode de entradas
-- Shortcode de sesiones
+- Shortcode de sesiones de la comunidad
 - Shortcode de proyectos
 
 
