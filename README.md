@@ -1,13 +1,46 @@
-# BFG funciones Shortcode
+# BFG Shortcode
 
 Plugin para Wordpress con un listado de funciones que obtienen distinto contenido de la plataforma.
 
-- Shortcode de eventos de calendario
-- Shortcode de miembros
-- Shortcode de entradas
-- Shortcode de sesiones de la comunidad
-- Shortcode de proyectos
+### Listado de shortcode para implementar:
 
+Eventos de calendario
+```
+[events-shortcode]
+```
+
+Top miembros
+
+```
+[members-shortcode]
+```
+Entradas de blog
+
+```
+[post-shortcode]
+```
+Sesiones de la comunidad
+
+```
+[sesiones-shortcode]
+```
+Proyectos
+
+```
+[proyectos-shortcode]
+```
+
+Captación Video Sesiones
+
+```
+[video-shortcode]
+```
+
+Captación Registro de Eventos
+
+```
+[registro-evento-shortcode]
+```
 
 ### Instalación
 

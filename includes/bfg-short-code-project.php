@@ -12,8 +12,8 @@ function bfg_project_shortcode($atts)
 	$profileUserID = bp_displayed_user_id();
 	$current_user = wp_get_current_user();
 
-  $odsCategory = xprofile_get_field_data('342', $current_user->ID, $multi_format = 'comma');
-  $odsCategoryText = xprofile_get_field_data('342', $current_user->ID);
+  $odsCategory = xprofile_get_field_data('343', $current_user->ID, $multi_format = 'comma');
+  $odsCategoryText = xprofile_get_field_data('343', $current_user->ID);
 
 	$argsGetMembers = array(
 		'type' => "active",
@@ -68,14 +68,16 @@ function bfg_project_shortcode($atts)
 				 $output .= ob_get_clean();
 		endwhile;
 		wp_reset_postdata();
-		if( $show_archive == 'true' ) {
-				 $output .= '<div class="full-width align-right">';
-				 $output .= '<a class="button-small inverse" href="' . get_home_url() . '/news">See All Archives</a>';
-				 $output .= '</div>';
-		}
+
 		$output .= '</div>';
 		$output .= '</div>';
-	} 
+	}else {
+		ob_start();
+		?>
+		<p>No hay proyectos relacionados con los ODS que has elegido. En la <a href="<?php echo home_url('proyectos'); ?>">página de proyectos</a>  puedes ver todos los que tenemos</p>
+		<?
+		$output .= ob_get_clean();
+	}
 	// do_action('bfg_filter_proyectos_slick_script');
 	return $output;
 }

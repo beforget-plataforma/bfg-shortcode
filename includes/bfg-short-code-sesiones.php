@@ -16,8 +16,8 @@ function bfg_sesiones_shortcode($atts)
 	$current_user = wp_get_current_user();
 
 
-  $sesionesCategory = xprofile_get_field_data('341', $current_user->ID, $multi_format = 'comma');
-  $sesionesCategoryText = xprofile_get_field_data('341', $current_user->ID);
+  $sesionesCategory = xprofile_get_field_data('344', $current_user->ID, $multi_format = 'comma');
+  $sesionesCategoryText = xprofile_get_field_data('344', $current_user->ID);
 	$templateLayout = 'template-parts/content-dashboard-sesiones';
 	$classSlide = 'flex bfg-flex-grap bfg-slick-slider bfg-slide-sesiones';
 
