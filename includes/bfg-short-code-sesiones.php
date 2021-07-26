@@ -65,11 +65,6 @@ function bfg_sesiones_shortcode($atts)
 				 $output .= ob_get_clean();
 		endwhile;
 		wp_reset_postdata();
-		if( $show_archive == 'true' ) {
-				 $output .= '<div class="full-width align-right">';
-				 $output .= '<a class="button-small inverse" href="' . get_home_url() . '/news">See All Archives</a>';
-				 $output .= '</div>';
-		}
 		$output .= '</div>';
 		$output .= '</div>';
 		$output .= '</div>';

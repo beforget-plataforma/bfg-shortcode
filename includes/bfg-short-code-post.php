@@ -27,10 +27,13 @@ function bfg_post_shortcode($atts)
 	$layoutLibrery = ["list", "block", "slide"];
 	$templateLayout = "";
 	
-	
+	if($layout === 'list') {
+		$templateLayout = 'template-parts/content-dashboard-post';
+	} else if($layout === 'slide'){
+		$templateLayout = 'template-parts/content-dashboard-post';
+		$classSlide = 'flex bfg-flex-grap bfg-slide-post';
+	}
 
-	$templateLayout = 'template-parts/content-dashboard-post';
-	$classSlide = 'flex bfg-flex-grap bfg-slide-post';
 	$args = array(
 		'post_type' => 'post',
 		'posts_per_page' => -1,

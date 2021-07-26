@@ -374,6 +374,9 @@
     z-index: 444;
     display: none;
 }
+.ui-resizable .bfg-shortcode-lading-slider.active {
+    display: none;
+}
 .bfg-shortcode-lading-slider.active {
     display: block;
 }
