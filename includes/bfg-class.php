@@ -1,4 +1,4 @@
-<?
+<?php
 
 class BFGShortCodes {
   static $shortCodesContent = array(

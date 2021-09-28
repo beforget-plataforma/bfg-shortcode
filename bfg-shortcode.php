@@ -17,8 +17,8 @@ require_once plugin_dir_path(__FILE__) . 'includes/bfg-short-code-events.php';
 require_once plugin_dir_path(__FILE__) . 'includes/bfg-short-code-sesiones.php';
 require_once plugin_dir_path(__FILE__) . 'includes/bfg-short-code-project.php';
 require_once plugin_dir_path(__FILE__) . 'includes/bfg-short-code-style-register.php';
-require_once plugin_dir_path(__FILE__) . 'includes/bfg-short-code-video-sesion.php';
-require_once plugin_dir_path(__FILE__) . 'includes/bfg-short-code-registro-evento.php';
+// require_once plugin_dir_path(__FILE__) . 'includes/bfg-short-code-video-sesion.php';
+// require_once plugin_dir_path(__FILE__) . 'includes/bfg-short-code-registro-evento.php';
 require_once plugin_dir_path(__FILE__) . 'includes/bfg-class.php';
 
 add_action( 'init', 'bfg_load_shorcode');

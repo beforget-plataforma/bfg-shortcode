@@ -12,8 +12,8 @@ function bfg_project_shortcode($atts)
 	$profileUserID = bp_displayed_user_id();
 	$current_user = wp_get_current_user();
 
-  $odsCategory = xprofile_get_field_data('343', $current_user->ID, $multi_format = 'comma');
-  $odsCategoryText = xprofile_get_field_data('343', $current_user->ID);
+  $odsCategory = xprofile_get_field_data('17', $current_user->ID, $multi_format = 'comma');
+  $odsCategoryText = xprofile_get_field_data('17', $current_user->ID);
 
 	$argsGetMembers = array(
 		'type' => "active",
@@ -31,7 +31,7 @@ function bfg_project_shortcode($atts)
 		$categorySplit = explode(",", $odsCategory);
 		$termsText = implode(' ', $odsCategoryText);
 		foreach ($categorySplit as &$valor) {
-			$splitString = explode('ods/', $valor);
+			$splitString = explode('categoria/', $valor); // ods/
 			$textCategpryArray = explode('/"', $splitString[1]);
 			array_push($splitStringTemp, $textCategpryArray[0]);
 		}
@@ -49,7 +49,7 @@ function bfg_project_shortcode($atts)
 		'tax_query' => $isCategory ? array(
 			'relation' => 'OR',
 			array(
-				'taxonomy' => 'ods',
+				'taxonomy' => 'categoria-sesion', // 'ods'
 				'field'    => 'slug',
 				'terms'    => $tempTerms,
 			)
@@ -75,7 +75,7 @@ function bfg_project_shortcode($atts)
 		ob_start();
 		?>
 		<p>No hay proyectos relacionados con los ODS que has elegido. En la <a href="<?php echo home_url('proyectos'); ?>">página de proyectos</a>  puedes ver todos los que tenemos</p>
-		<?
+		<?php
 		$output .= ob_get_clean();
 	}
 	// do_action('bfg_filter_proyectos_slick_script');
